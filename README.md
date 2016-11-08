@@ -48,40 +48,34 @@ Network is an `Array` of nearby networks. Each network will have the following k
 ```
 [
     {
-        ssid: 'ACLCICHCGC',
-        mac: '6c:b0:ce:44:e9:1e',
+        ssid: 'wifi with-n0-s3cur1ty!',
+        mac: '16:0d:7f:49:da:e1',
         channel: '1',
-        security: [ 'WPA2' ]
+        security: ['None']
     },
     {
-        ssid: 'HOUSE-E5AD',
-        mac: 'cc:03:fa:65:e5:1e',
-        channel: '6',
-        security: [ 'WPA', 'WPA2' ]
-    },
-    {
-        ssid: 'freewifi',
-        mac: 'ce:03:fa:65:e5:1e',
-        channel: '6',
-        security: [ 'None' ]
-    },
-    {
-        ssid: 'insecure',
-        mac: 'e6:3e:fc:db:fb:1e',
+        ssid: 'WEP enabled',
+        mac: '16:0d:7f:49:da:e2',
         channel: '1',
-        security: [ 'None' ]
+        security: ['WEP']
     },
     {
-        ssid: 'myqeast9966',
-        mac: '40:4a:03:be:53:1e',
-        channel: '11',
-        security: [ 'WPA', 'WPA2' ]
+        ssid: 'WPA1 Enabled',
+        mac: '16:0d:7f:49:da:e3',
+        channel: '1',
+        security: ['WPA']
     },
     {
-        ssid: 'pchome9',
-        mac: 'e0:91:f5:af:8d:1e',
-        channel: '2',
-        security: [ 'WPA2' ]
+        ssid: 'WPA1+WPA2',
+        mac: '16:0d:7f:49:da:e4',
+        channel: '1',
+        security: ['WPA', 'WPA2'],
+    },
+    {
+        ssid: 'WPA2 Only',
+        mac: '16:0d:7f:49:da:e5',
+        channel: '1',
+        security: ['WPA2']
     }
 ]
 ```
