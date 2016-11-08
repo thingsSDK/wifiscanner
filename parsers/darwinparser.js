@@ -1,8 +1,4 @@
-/// <reference path="../../typings/tsd.d.ts" />
-
-import wifiscanner = require("wifiscanner");
-
-export default function parse(data): wifiscanner.IWirelessNetwork[] {
+module.exports = function parse(data) {
     var lines = data.split("\n");
     var headers = lines.shift();
     var indexOfMacAddress = headers.indexOf("BSSID");
@@ -24,7 +20,7 @@ function filterBlanks(line) {
     return line.replace(/\s+/g,"").length !== 0;
 }
 
-function parseLine(line, indexOfMacAddress): wifiscanner.IWirelessNetwork {
+function parseLine(line, indexOfMacAddress) {
     var ssid = line.substr(0, indexOfMacAddress).trim();
     line = line.substr(indexOfMacAddress, line.length - indexOfMacAddress);
 
@@ -38,9 +34,9 @@ function parseLine(line, indexOfMacAddress): wifiscanner.IWirelessNetwork {
     //[6..x] SECURITY (auth/unicast/group)
 
     return {
-        ssid: ssid,
+        ssid,
         mac: components[0].toLowerCase(),
-        channel: components[2],
+        channel: components[2].split(",")[0],
         security: components.splice(5).map(cleanSecurity).sort()
     };
 }

@@ -1,10 +1,10 @@
 # WiFi Scanner
 
-[![Build Status](https://travis-ci.org/chalkers/wifiscanner.svg?branch=master)](https://travis-ci.org/chalkers/wifiscanner)
-[![Dependency Status](https://david-dm.org/chalkers/wifiscanner.svg)](https://david-dm.org/chalkers/wifiscanner)
-[![devDependency Status](https://david-dm.org/chalkers/wifiscanner/dev-status.svg)](https://david-dm.org/chalkers/wifiscanner#info=devDependencies)
+[![Build Status](https://travis-ci.org/thingssdk/wifiscanner.svg?branch=master)](https://travis-ci.org/chalkers/wifiscanner)
+[![Dependency Status](https://david-dm.org/thingssdk/wifiscanner.svg)](https://david-dm.org/chalkers/wifiscanner)
+[![devDependency Status](https://david-dm.org/thingssdk/wifiscanner/dev-status.svg)](https://david-dm.org/chalkers/wifiscanner#info=devDependencies)
 
-A simple Node.js WiFi Scanner for Mac and Linux. Works great on embedded devices like the Raspberry Pi.
+A simple Node.js WiFi Scanner for Windows, Linux and macOS. Works great on embedded devices like the Raspberry Pi.
 
 ## Installation
 
@@ -20,12 +20,12 @@ npm install wifiscanner
 4. Profit?
 
 ```javascript
-var wifiscanner = require("wifiscanner");
+const wifiscanner = require("wifiscanner");
 
 //Returns appropriate instance of a wifi scanner
-var scanner = wifiscanner();
+const scanner = wifiscanner();
 
-scanner.scan(function(error, networks){
+scanner.scan((error, networks) => {
     if(error) {
         console.error(error);
     } else {
@@ -86,6 +86,8 @@ Network is an `Array` of nearby networks. Each network will have the following k
 ]
 ```
 
+There is a limitation on _Windows_. If there is a network that is both `WPA` and `WPA2` security, only `WPA` will be reported.
+
 ## Less Basic Usage
 
 ### Custom binaries and arguments
@@ -93,16 +95,16 @@ Network is an `Array` of nearby networks. Each network will have the following k
 You can specify binary (`binaryPath`) and arguments (`args`) in a set of `options`.
 
 ```javascript
-var wifiscanner = require("wifiscanner");
+const wifiscanner = require("wifiscanner");
 
 
 //Options
-var options = {
+const options = {
     args: "wlan2 scan",
     binaryPath: "/path/to/iwlist"
 }
 
-var scanner = wifiscanner(options);
+const scanner = wifiscanner(options);
 
 scanner.scan(function(error, networks){
     if(error) {
@@ -130,16 +132,16 @@ The default behavior from this module is to do nothing. However, you can pass in
 `scan` method and do what you want with it.
 
 ```javascript
-var wifiscanner = require("wifiscanner");
+const wifiscanner = require("wifiscanner");
 
 
 //Options
-var options = {
+const options = {
     args: "wlan2 scan",
     binaryPath: "/path/to/iwlist"
 }
 
-var scanner = wifiscanner(options);
+const scanner = wifiscanner(options);
 
 scanner.scan(function(error, networks){
     //...
@@ -148,7 +150,3 @@ scanner.scan(function(error, networks){
 });
 
 ```
-
-## To dos
-
-* Windows Support - windows adapter and parser

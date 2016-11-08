@@ -1,12 +1,9 @@
-/// <reference path="../../typings/tsd.d.ts" />
+const childProcess = require("child_process");
 
-import wifiscanner = require("wifiscanner");
-import childProcess = require("child_process");
-
-export default class WifiScanner {
-	
-    constructor(public options: wifiscanner.IWifiScannerOptions, private parser) {
-
+module.exports = class WifiScanner {
+    constructor(options, parser) {
+        this.parser = parser;
+        this.options = options;
 	}	
     
 	scan(callback, standardErrorCallback) {
@@ -22,7 +19,7 @@ export default class WifiScanner {
 		return this.options.binaryPath + " " + this.options.args;
 	}
 
-    parse(data: string): wifiscanner.IWirelessNetwork[] {
+    parse(data) {
         return this.parser(data);
     }
 }

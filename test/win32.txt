@@ -1,0 +1,58 @@
+
+Interface name : WiFi
+There are 5 networks currently visible.
+
+SSID 1 : wifi with-n0-s3cur1ty!
+    Network type            : Infrastructure
+    Authentication          : Open
+    Encryption              : None
+    BSSID 1                 : 16:0d:7f:49:da:e1
+         Signal             : 100%
+         Radio type         : 802.11n
+         Channel            : 1
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+
+SSID 2 : WEP enabled
+    Network type            : Infrastructure
+    Authentication          : Open
+    Encryption              : WEP
+    BSSID 1                 : 16:0d:7f:49:da:e2
+         Signal             : 100%
+         Radio type         : 802.11g
+         Channel            : 1
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+
+SSID 3 : WPA1 Enabled
+    Network type            : Infrastructure
+    Authentication          : WPA-Personal
+    Encryption              : TKIP
+    BSSID 1                 : 16:0d:7f:49:da:e3
+         Signal             : 96%
+         Radio type         : 802.11g
+         Channel            : 1
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+
+SSID 4 : WPA1+WPA2
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP
+    BSSID 1                 : 16:0d:7f:49:da:e4
+         Signal             : 100%
+         Radio type         : 802.11n
+         Channel            : 1
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+
+SSID 5 : WPA2 Only
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP
+    BSSID 1                 : 16:0d:7f:49:da:e5
+         Signal             : 100%
+         Radio type         : 802.11n
+         Channel            : 1
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54

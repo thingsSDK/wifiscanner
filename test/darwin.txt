@@ -1,8 +1,7 @@
                             SSID BSSID             RSSI CHANNEL HT CC SECURITY (auth/unicast/group)
-                     myqeast9966 40:4a:03:be:53:1e -82  11      N  -- WPA(PSK/AES,TKIP/TKIP) WPA2(PSK/AES,TKIP/TKIP)
-                        freewifi ce:03:fa:65:e5:1e -78  6       Y  -- NONE
-                      HOUSE-E5AD cc:03:fa:65:e5:1e -76  6       Y  -- WPA(PSK/AES,TKIP/TKIP) WPA2(PSK/AES,TKIP/TKIP)
-                         pchome9 e0:91:f5:af:8d:1e -80  2       Y  US WPA2(PSK/AES/AES)
-                      ACLCICHCGC 6c:b0:ce:44:e9:1e -48  1       Y  -- WPA2(PSK/AES/AES)
-                        insecure e6:3e:fc:db:fb:1e -84  1       Y  US NONE
-  PP-Print-11-Officejet Pro 8600 e4:5d:36:3f:71:19 -73  6       N  -- NONE
+          wifi with-n0-s3cur1ty! 16:0d:7f:49:da:e1 -16  1,+1    Y  -- NONE
+                     WEP enabled 16:0d:7f:49:da:e2 -17  1       N  -- WEP
+                    WPA1 Enabled 16:0d:7f:49:da:e3 -16  1       N  -- WPA(PSK/TKIP/TKIP) 
+                       WPA1+WPA2 16:0d:7f:49:da:e4 -18  1,+1    Y  -- WPA(PSK/AES,TKIP/TKIP) WPA2(PSK/AES,TKIP/TKIP) 
+                       WPA2 Only 16:0d:7f:49:da:e5 -62  1,+1    Y  -- WPA2(PSK/AES/AES) 
+
