@@ -6,7 +6,7 @@ node_js:
   - "7"
 
 install:
-  - npm install --dev
+  - npm install
 
 script:
   - npm run test:coverage
