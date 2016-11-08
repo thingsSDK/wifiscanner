@@ -1,8 +1,8 @@
 # WiFi Scanner
 
-[![Build Status](https://travis-ci.org/thingssdk/wifiscanner.svg?branch=master)](https://travis-ci.org/chalkers/wifiscanner)
-[![Dependency Status](https://david-dm.org/thingssdk/wifiscanner.svg)](https://david-dm.org/chalkers/wifiscanner)
-[![devDependency Status](https://david-dm.org/thingssdk/wifiscanner/dev-status.svg)](https://david-dm.org/chalkers/wifiscanner#info=devDependencies)
+[![Build Status](https://travis-ci.org/thingssdk/wifiscanner.svg?branch=master)](https://travis-ci.org/thingssdk/wifiscanner)
+[![Dependency Status](https://david-dm.org/thingssdk/wifiscanner.svg)](https://david-dm.org/thingssdk/wifiscanner)
+[![devDependency Status](https://david-dm.org/thingssdk/wifiscanner/dev-status.svg)](https://david-dm.org/thingssdk/wifiscanner#info=devDependencies)
 
 A simple Node.js WiFi Scanner for Windows, Linux and macOS. Works great on embedded devices like the Raspberry Pi.
 
@@ -86,7 +86,7 @@ Network is an `Array` of nearby networks. Each network will have the following k
 ]
 ```
 
-There is a limitation on _Windows_. If there is a network that is both `WPA` and `WPA2` security, only `WPA` will be reported.
+There is a limitation on _Windows_. If there is a network that is both `WPA` and `WPA2` security, only `WPA2` will be reported.
 
 ## Less Basic Usage
 
