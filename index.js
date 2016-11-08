@@ -16,7 +16,7 @@ function platformSelect(options) {
 function scanner(options) {
     options = options || {}
     const platform = platformSelect(options);
-    nconf.file(`${__dirname}/../config/${platform}.json`);
+    nconf.file(`${__dirname}/config/${platform}.json`);
     
     let parser;
     switch(platform) {
