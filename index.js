@@ -1,3 +1,5 @@
+'use strict';
+
 const WiFiScanner = require('./scanners/wifiscanner');
 const darwinparser = require('./parsers/darwinparser');
 const linuxparser = require('./parsers/linuxparser');

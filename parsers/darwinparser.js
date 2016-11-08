@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = function parse(data) {
     var lines = data.split("\n");
     var headers = lines.shift();

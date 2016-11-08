@@ -1,3 +1,5 @@
+'use strict';
+
 function cleanCellLine(cellLine) {
     return cellLine.trim();
 }
