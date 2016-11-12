@@ -1,6 +1,7 @@
 # WiFi Scanner
 
 [![Build Status](https://travis-ci.org/thingsSDK/wifiscanner.svg?branch=master)](https://travis-ci.org/thingsSDK/wifiscanner)
+[![codecov](https://codecov.io/gh/thingsSDK/wifiscanner/branch/master/graph/badge.svg)](https://codecov.io/gh/thingsSDK/wifiscanner)
 [![Dependency Status](https://david-dm.org/thingssdk/wifiscanner.svg)](https://david-dm.org/thingssdk/wifiscanner)
 [![devDependency Status](https://david-dm.org/thingssdk/wifiscanner/dev-status.svg)](https://david-dm.org/thingssdk/wifiscanner#info=devDependencies)
 
