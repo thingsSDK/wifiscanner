@@ -9,7 +9,8 @@ module.exports = class WifiScanner {
 	}	
     
 	scan(callback, standardErrorCallback) {
-        childProcess.exec(this.command,  (error, standardOut, standardError) => {
+        var cmd = this.command.split(' ')
+        childProcess.execFile(cmd[0], cmd.slice(1),  (error, standardOut, standardError) => {
             if (standardError && typeof standardErrorCallback === "function") {
                 standardErrorCallback(standardError);
             }
